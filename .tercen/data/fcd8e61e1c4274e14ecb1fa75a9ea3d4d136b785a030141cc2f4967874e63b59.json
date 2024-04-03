@@ -1,0 +1,397 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "fcd8e61e1c4274e14ecb1fa75a9ea3d4d136b785a030141cc2f4967874e63b59",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "CSV Export",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "fcd8e61e1c4274e14ecb1fa75a9ea3d4d136b785a030141cc2f4967874e63b59"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 1,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "de624186-86eb-468d-a9a8-5a790541be13",
+   "name": "UKA_MTvC.ds02.filename",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "f97bcab6-7741-4048-b385-3b9b331dd843",
+   "name": "UKA_MTvC.ds02.mimetype",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "b6ecc83b-31c0-4617-be70-a0636ea8ee06",
+   "name": ".content",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/fc/d8/fcd8e61e1c4274e14ecb1fa75a9ea3d4d136b785a030141cc2f4967874e63b59",
+ "relation": {
+  "kind": "Relation",
+  "id": "2060754b-46bc-4459-8f47-2e673f92ce93"
+ },
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "GatherRelation",
+   "id": "5e7f181f-71de-422e-85e0-ee73259b49cf",
+   "relation": {
+    "kind": "CompositeRelation",
+    "id": "22e9807a-dd87-43e0-863f-ee39e76d6b2a",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "leftOuter",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        "S100QC..Test Condition"
+       ],
+       "rColumns": [
+        "S100QC..Test Condition"
+       ]
+      },
+      "rightRelation": {
+       "kind": "RenameRelation",
+       "id": "131ccd8a-6f44-4d83-b110-d71109e4c996",
+       "relation": {
+        "kind": "CompositeRelation",
+        "id": "b826bb1f-b5c8-424e-ae90-8d4679946834",
+        "joinOperators": [
+         {
+          "kind": "JoinOperator",
+          "joinType": "leftOuter",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".ci"
+           ],
+           "rColumns": [
+            "5b1e6b7a71c54a9c0a7286fb0bd449538aaef7223b989d33e3f418a6a83433a3._rids"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "5b1e6b7a71c54a9c0a7286fb0bd449538aaef7223b989d33e3f418a6a83433a3",
+           "index": 2
+          }
+         }
+        ],
+        "mainRelation": {
+         "kind": "SimpleRelation",
+         "id": "9876a6f601c50a0e4b04cadc7824267a20dddfefe8bb2b252ca17373f09fee75",
+         "index": 1
+        }
+       },
+       "inNames": [
+        ".ci",
+        "UKA_MTvC.ds11.Kinase Name",
+        "UKA_MTvC.ds11.Kinase Uniprot ID",
+        "UKA_MTvC.ds11.Kinase Group",
+        "UKA_MTvC.ds11.Kinase Family",
+        "UKA_MTvC.ds11.Mean Significance Score",
+        "UKA_MTvC.ds11.Mean Specificity Score",
+        "UKA_MTvC.ds11.Median Final score",
+        "UKA_MTvC.ds11.Max Final score",
+        "UKA_MTvC.ds11.Median Kinase Statistic",
+        "UKA_MTvC.ds11.Mean Kinase Statistic",
+        "UKA_MTvC.ds11.SD Kinase Statitistic",
+        "UKA_MTvC.ds11.Median Kinase Change",
+        "UKA_MTvC.ds11.Mean peptide set size",
+        "9876a6f601c50a0e4b04cadc7824267a20dddfefe8bb2b252ca17373f09fee75._rids",
+        "9876a6f601c50a0e4b04cadc7824267a20dddfefe8bb2b252ca17373f09fee75.tlbId",
+        "S100QC..Test Condition",
+        "5b1e6b7a71c54a9c0a7286fb0bd449538aaef7223b989d33e3f418a6a83433a3._rids",
+        "5b1e6b7a71c54a9c0a7286fb0bd449538aaef7223b989d33e3f418a6a83433a3.tlbId",
+        "S100QC..Test Condition"
+       ],
+       "outNames": [
+        ".ci",
+        "UKA_MTvC.ds11.Kinase Name",
+        "UKA_MTvC.ds11.Kinase Uniprot ID",
+        "UKA_MTvC.ds11.Kinase Group",
+        "UKA_MTvC.ds11.Kinase Family",
+        "UKA_MTvC.ds11.Mean Significance Score",
+        "UKA_MTvC.ds11.Mean Specificity Score",
+        "UKA_MTvC.ds11.Median Final score",
+        "UKA_MTvC.ds11.Max Final score",
+        "UKA_MTvC.ds11.Median Kinase Statistic",
+        "UKA_MTvC.ds11.Mean Kinase Statistic",
+        "UKA_MTvC.ds11.SD Kinase Statitistic",
+        "UKA_MTvC.ds11.Median Kinase Change",
+        "UKA_MTvC.ds11.Mean peptide set size",
+        "9876a6f601c50a0e4b04cadc7824267a20dddfefe8bb2b252ca17373f09fee75._rids",
+        "9876a6f601c50a0e4b04cadc7824267a20dddfefe8bb2b252ca17373f09fee75.tlbId",
+        "S100QC..Test Condition",
+        "5b1e6b7a71c54a9c0a7286fb0bd449538aaef7223b989d33e3f418a6a83433a3._rids",
+        "5b1e6b7a71c54a9c0a7286fb0bd449538aaef7223b989d33e3f418a6a83433a3.tlbId",
+        "UKA_MTvC.ds11..Test Condition"
+       ]
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "RenameRelation",
+     "id": "0718947c-2bbf-4aa1-ae58-ceaae842f17f",
+     "relation": {
+      "kind": "SimpleRelation",
+      "id": "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b",
+      "index": 0
+     },
+     "inNames": [
+      "js0.Test Condition",
+      "js0.Run",
+      "ds0.Barcode",
+      "ds0.Row",
+      "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b._rids",
+      "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b.tlbId",
+      "js0.Test Condition",
+      "js0.Run",
+      "ds0.Barcode",
+      "ds0.Row"
+     ],
+     "outNames": [
+      "js0.Test Condition",
+      "js0.Run",
+      "ds0.Barcode",
+      "ds0.Row",
+      "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b._rids",
+      "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b.tlbId",
+      "S100QC..Test Condition",
+      "S100QC..Run",
+      "S100QC..Barcode",
+      "S100QC..Row"
+     ]
+    }
+   },
+   "names": [
+    "UKA_MTvC.ds11.Mean Significance Score",
+    "UKA_MTvC.ds11.Mean Specificity Score",
+    "UKA_MTvC.ds11.Median Final score",
+    "UKA_MTvC.ds11.Max Final score",
+    "UKA_MTvC.ds11.Median Kinase Statistic",
+    "UKA_MTvC.ds11.Mean Kinase Statistic",
+    "UKA_MTvC.ds11.SD Kinase Statitistic",
+    "UKA_MTvC.ds11.Median Kinase Change",
+    "UKA_MTvC.ds11.Mean peptide set size"
+   ],
+   "valueName": "UKA_MTvC.gs0.value",
+   "variableName": "UKA_MTvC.gs0.variable",
+   "valueType": "double",
+   "gatherType": ""
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "UKA_MTvC.gs0.variable",
+    "type": "string"
+   }
+  ],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "S100QC..Test Condition",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "UKA_MTvC.ds11.Kinase Name",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "UKA_MTvC.ds11.Kinase Uniprot ID",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "UKA_MTvC.ds11.Kinase Group",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "UKA_MTvC.ds11.Kinase Family",
+    "type": "string"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "UKA_MTvC.gs0.value",
+     "type": "double"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "UKA_MTvC.ds02",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Export Table",
+    "version": "0.2.5",
+    "operatorId": "17",
+    "operatorKind": "ROperator",
+    "propertyValues": [
+     {
+      "kind": "PropertyValue",
+      "name": "format",
+      "value": "CSV"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "filename_prefix",
+      "value": "Export"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "export_to_project",
+      "value": "true"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "na_encoding",
+      "value": ""
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "decimal_character",
+      "value": "."
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "data_separator",
+      "value": ","
+     }
+    ],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/export_table_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [
+    {
+     "kind": "Pair",
+     "key": "cpu",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "ram",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "cpu-shares",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "tercen.collect.stats",
+     "value": "false"
+    },
+    {
+     "kind": "Pair",
+     "key": "debug",
+     "value": "false"
+    }
+   ],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

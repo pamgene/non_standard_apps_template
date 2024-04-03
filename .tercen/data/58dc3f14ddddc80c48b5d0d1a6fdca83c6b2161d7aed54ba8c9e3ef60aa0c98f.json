@@ -1,0 +1,327 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "58dc3f14ddddc80c48b5d0d1a6fdca83c6b2161d7aed54ba8c9e3ef60aa0c98f",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "1e217ec0-75ab-1f25-8756-29c9644b152f",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "58dc3f14ddddc80c48b5d0d1a6fdca83c6b2161d7aed54ba8c9e3ef60aa0c98f"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 480,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "0fe9ce5c-2fc9-45aa-ba1c-c36915c662c7",
+   "name": "UKA_MTvC.C.identity",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "a4fcc84c-ec0a-4a0a-880c-f89c3a3121b2",
+   "name": ".ci",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "b0003d2e-bd39-4429-82cc-6464f364fa3c",
+   "name": ".ri",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/58/dc/58dc3f14ddddc80c48b5d0d1a6fdca83c6b2161d7aed54ba8c9e3ef60aa0c98f",
+ "relation": {
+  "kind": "Relation",
+  "id": "abe88043-f7b7-4f79-96e9-760bb74bcb2a"
+ },
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "RenameRelation",
+   "id": "06b07384-8fcc-4364-be4a-5adf96ae75f0",
+   "relation": {
+    "kind": "CompositeRelation",
+    "id": "77e55abb-e9b8-43a5-aae7-9e8bdb7aa543",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "leftOuter",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        ".ri"
+       ],
+       "rColumns": [
+        "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7._rids"
+       ]
+      },
+      "rightRelation": {
+       "kind": "SimpleRelation",
+       "id": "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7",
+       "index": 2
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "CompositeRelation",
+     "id": "7f6c8099-5bad-46fd-b1a3-57dc247947b3",
+     "joinOperators": [
+      {
+       "kind": "JoinOperator",
+       "joinType": "leftOuter",
+       "leftPair": {
+        "kind": "ColumnPair",
+        "lColumns": [
+         ".ci"
+        ],
+        "rColumns": [
+         "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b._rids"
+        ]
+       },
+       "rightRelation": {
+        "kind": "SimpleRelation",
+        "id": "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b",
+        "index": 1
+       }
+      }
+     ],
+     "mainRelation": {
+      "kind": "SimpleRelation",
+      "id": "bc192a3ce125296d92814881cd1140d32f190c25e1e9fecba281a0882ac80b9b",
+      "index": 0
+     }
+    }
+   },
+   "inNames": [
+    ".ri",
+    ".ci",
+    "S100QC.logTransformed",
+    "bc192a3ce125296d92814881cd1140d32f190c25e1e9fecba281a0882ac80b9b._rids",
+    "bc192a3ce125296d92814881cd1140d32f190c25e1e9fecba281a0882ac80b9b.tlbId",
+    "js0.Test Condition",
+    "js0.Run",
+    "ds0.Barcode",
+    "ds0.Row",
+    "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b._rids",
+    "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b.tlbId",
+    "ETS.ds1..ID",
+    "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7._rids",
+    "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7.tlbId",
+    "js0.Test Condition",
+    "js0.Run",
+    "ds0.Barcode",
+    "ds0.Row",
+    "ETS.ds1..ID"
+   ],
+   "outNames": [
+    ".ri",
+    ".ci",
+    "S100QC.logTransformed",
+    "bc192a3ce125296d92814881cd1140d32f190c25e1e9fecba281a0882ac80b9b._rids",
+    "bc192a3ce125296d92814881cd1140d32f190c25e1e9fecba281a0882ac80b9b.tlbId",
+    "js0.Test Condition",
+    "js0.Run",
+    "ds0.Barcode",
+    "ds0.Row",
+    "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b._rids",
+    "a8df0ca433a55dff97a48f1146a93b6766deb9ec8be42a5f9d4a11404670e57b.tlbId",
+    "ETS.ds1..ID",
+    "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7._rids",
+    "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7.tlbId",
+    "S100QC..Test Condition",
+    "S100QC..Run",
+    "S100QC..Barcode",
+    "S100QC..Row",
+    "S100QC..ID"
+   ]
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "S100QC..Test Condition",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "S100QC..Barcode",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "S100QC..Row",
+    "type": "double"
+   }
+  ],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "S100QC..ID",
+    "type": "string"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "S100QC.logTransformed",
+     "type": "double"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": [
+    {
+     "kind": "NamedFilter",
+     "logical": "and",
+     "not": false,
+     "filterExprs": [
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "Control",
+       "factor": {
+        "kind": "Factor",
+        "name": "S100QC..Test Condition",
+        "type": "string"
+       }
+      }
+     ],
+     "meta": [],
+     "name": "Control"
+    }
+   ]
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "UKA_MTvC.C",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Identity",
+    "version": "0.1.3",
+    "operatorId": "10",
+    "operatorKind": "ROperator",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/identity_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [
+    {
+     "kind": "Pair",
+     "key": "cpu",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "ram",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "cpu-shares",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "tercen.collect.stats",
+     "value": "false"
+    },
+    {
+     "kind": "Pair",
+     "key": "debug",
+     "value": "false"
+    }
+   ],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

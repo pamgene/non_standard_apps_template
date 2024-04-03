@@ -1,0 +1,113 @@
+{
+ "kind": "CubeQueryTableSchema",
+ "id": "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "row",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "ETS.ds1..ID.size_in_bytes",
+   "value": "1808"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 80,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "3a01d4a1-adcc-48cb-bfc8-77645cfd4515",
+   "name": "ETS.ds1..ID",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/3c/ea/3cea8f1b4f9c7230ac5cc0b48dc84a3d6237ff21962c5c6839627ba9c477b4a7",
+ "relation": {
+  "kind": "Relation",
+  "id": "f77d1eca-9d95-4d1f-80c2-7e14bddb9c12"
+ },
+ "queryHash": "9e9ee050e17778c8ff90be9cbcfc628d",
+ "queryTableType": "row",
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "Relation",
+   "id": "38031490-78e5-4a36-8410-a59c7887a210"
+  },
+  "colColumns": [],
+  "rowColumns": [],
+  "axisQueries": [],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "",
+    "version": "",
+    "operatorId": "",
+    "operatorKind": "",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": ""
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "kind": "CubeQueryTableSchema",
+ "id": "f603a9afe5fe53a64b8062f975dee597c4700cda3b43a71327a3b90e040e19b7",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "column",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "mult..Barcode.size_in_bytes",
+   "value": "528"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "f603a9afe5fe53a64b8062f975dee597c4700cda3b43a71327a3b90e040e19b7"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 24,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "bb77e856-0632-4b84-bb7b-b9b5f90d08d7",
+   "name": "mult..Barcode",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "dfb5b3fd-debd-404b-b58d-ec986986b91f",
+   "name": "mult..Row",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "05cf4414-a534-4197-8f40-f9c3a05aedd8",
+   "name": "ETS.ds1..Cycle",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/f6/03/f603a9afe5fe53a64b8062f975dee597c4700cda3b43a71327a3b90e040e19b7",
+ "relation": {
+  "kind": "Relation",
+  "id": "b9d578af-5fd4-4958-af19-7c04e02006a0"
+ },
+ "queryHash": "9e9ee050e17778c8ff90be9cbcfb285c",
+ "queryTableType": "column",
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "Relation",
+   "id": "f95afe41-9fa9-4b30-86fc-fb83396dcacb"
+  },
+  "colColumns": [],
+  "rowColumns": [],
+  "axisQueries": [],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "",
+    "version": "",
+    "operatorId": "",
+    "operatorKind": "",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": ""
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}
